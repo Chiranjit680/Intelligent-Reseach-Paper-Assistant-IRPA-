@@ -1,0 +1,76 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "intelligent-research-paper-assistant"
+version = "0.1.0"
+description = "A research assistant for managing and analyzing research papers"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+
+authors = [
+    { name = "Chiranjit Saha", email = "chiranjitsaha680@gmail.com" }
+]
+
+dependencies = [
+    # Core Backend
+    "fastapi",
+    "uvicorn[standard]",
+    "pydantic",
+    "python-multipart",
+    "sqlmodel",
+    "psycopg2-binary",
+    "pydantic-settings",
+    "python-dotenv",
+    "requests",
+    "pandas",
+    "numpy",
+    "scipy",
+    "beautifulsoup4",
+
+    # Agents + LLM Orchestration
+    "langchain",
+    "langgraph",
+
+    # LLMs & Embeddings
+    "transformers",
+    "sentence-transformers",
+    "torch",
+    "accelerate",
+    "sentencepiece",
+
+    # Academic Embeddings
+    "semantic-text-similarity",
+
+    # NLP / NER
+    "spacy",
+    "spacy-transformers",
+
+    # PDF Parsing
+    "pymupdf",
+    "pdfminer.six",
+
+    # Web / Metadata Scraping
+    "arxiv",
+
+    # Vector DB
+    "pgvector",
+    "SQLAlchemy",
+    "asyncpg",
+    "chromadb",
+    "faiss-cpu",
+
+    # Background Tasks
+    "celery",
+    "redis",
+
+    # Streamlit UI
+    "streamlit",
+    "pyvis",
+
+    # Utilities
+    "tqdm",
+    "loguru"
+]

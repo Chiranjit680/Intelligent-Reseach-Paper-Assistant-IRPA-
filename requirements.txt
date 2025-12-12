@@ -1,0 +1,62 @@
+# Core Backend
+fastapi
+uvicorn[standard]
+pydantic
+python-multipart
+sqlmodel
+psycopg2-binary
+pydantic-settings
+python-dotenv
+requests
+yfinance
+pandas
+numpy
+scipy
+beautifulsoup4
+
+# Agents + LLM Orchestration
+langchain
+langgraph
+
+# LLMs & Embeddings
+transformers
+sentence-transformers
+torch
+accelerate
+sentencepiece
+
+# Academic-specialized Embeddings (SPECTER)
+semantic-text-similarity
+
+# NLP / NER
+spacy
+spacy-transformers
+# Remember to run: python -m spacy download en_core_web_trf
+
+# PDF Parsing
+pymupdf
+pdfminer.six
+
+# Web / Metadata Scraping
+arxiv
+
+# Database + Vector Search
+psycopg2-binary
+pgvector
+SQLAlchemy
+asyncpg
+chromadb
+faiss-cpu
+
+# Background Tasks (Optional)
+celery
+redis
+
+# Streamlit UI
+streamlit
+pyvis
+
+# Utilities
+python-dotenv
+tqdm
+loguru
